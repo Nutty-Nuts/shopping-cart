@@ -1,0 +1,52 @@
+.shopDisplay {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    box-sizing: border-box;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.shopItem {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 0.5rem;
+
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+
+    box-shadow: 0.5rem 0.5rem lightgray;
+}
+
+.shopItem > * {
+    margin-bottom: 0.25rem;
+    width: 100%;
+}
+
+.shopItem > h3 {
+    text-align: left;
+}
+
+.itemAmount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.increment {
+    flex: 1;
+}
+
+.decrement {
+    flex: 1;
+}
+
+.amount {
+    flex: 2;
+}
