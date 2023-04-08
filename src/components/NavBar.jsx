@@ -1,6 +1,6 @@
 import React from "react";
 
-function NavBar() {
+function NavBar(props) {
     return (
         <div>
             <a href="/">
@@ -11,7 +11,7 @@ function NavBar() {
                 <button>Shop</button>
             </a>
 
-            <button>Cart</button>
+            <button>{props.cart}</button>
         </div>
     );
 }

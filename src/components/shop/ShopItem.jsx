@@ -28,7 +28,7 @@ function ShopItem(props) {
     };
 
     return (
-        <div className={styles.shopItem}>
+        <div id={props.id} className={styles.shopItem}>
             <h3>{props.product}</h3>
             <div className={styles.itemAmount}>
                 <button
@@ -48,7 +48,9 @@ function ShopItem(props) {
                 </button>
             </div>
             <br />
-            <button className="submitCart">Add to Card</button>
+            <button onClick={props.click} id="submitCart">
+                Add to Cart
+            </button>
         </div>
     );
 }
