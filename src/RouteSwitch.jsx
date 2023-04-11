@@ -9,9 +9,9 @@ function RouteSwitch() {
     const [count, setCount] = useState(0);
     const [items, setItems] = useState({});
 
-    const handleClick = (e) => {
+    const handleClick = (info) => {
         setCount(count + 1);
-        console.log(0);
+        console.log(info);
     };
 
     return (
@@ -22,7 +22,7 @@ function RouteSwitch() {
                     <Route path="/" element={<HomePage />} />
                     <Route
                         path="/shop"
-                        element={<ShopPage click={handleClick} />}
+                        element={<ShopPage parentCallback={handleClick} />}
                     />
                 </Routes>
             </BrowserRouter>
