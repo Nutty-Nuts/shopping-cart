@@ -19,7 +19,7 @@ export default function ShopItem(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.onSubmit({ [name]: amount });
+        props.onSubmit([name, amount]);
     }
     return (
         <div>

@@ -10,17 +10,16 @@ export default function RouteSwitch() {
     const [list, setList] = useState({});
 
     function getData(data) {
+        let value = data[1];
+
+        if (isNaN(list[data[0]])) value = data[1];
+        else value = list[data[0]] + data[1];
+
         setList((list) => ({
             ...list,
-            ...data,
+            [data[0]]: value,
         }));
     }
-
-    useEffect(() => {
-        console.log(list);
-        console.log(list.Plastics);
-        console.log(list.Metals);
-    });
 
     return (
         <div>
