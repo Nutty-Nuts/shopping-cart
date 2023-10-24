@@ -1,8 +1,9 @@
 import { render } from "@testing-library/react";
 import Card from "./Card";
+import "../styles/Cards.css";
 
 export default function Cards({ items }) {
-    return <div>{renderItems(items)}</div>;
+    return <div className="cards">{renderItems(items)}</div>;
 }
 
 function renderItems(array: Array<object>) {

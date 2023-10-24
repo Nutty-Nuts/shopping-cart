@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 12px 0px rgba(108, 108, 108, 0.2);
+}
+
+.card > img {
+    object-fit: contain;
+    height: 10rem;
+    width: 10rem;
+
+    margin: 0px auto;
+}
+
+.price {
+    margin-top: auto;
+}

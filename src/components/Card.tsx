@@ -1,3 +1,4 @@
+import "../styles/Card.css";
 interface ItemInfo {
     title: string;
     price: number;
@@ -5,10 +6,10 @@ interface ItemInfo {
 }
 export default function Card({ title, price, image }: ItemInfo) {
     return (
-        <div>
+        <div className="card">
             <img src={image} alt="" />
             <h4>{title}</h4>
-            <h5>{price}</h5>
+            <h5 className="price">{price}</h5>
         </div>
     );
 }
